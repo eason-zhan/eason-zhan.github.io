@@ -84,7 +84,7 @@ comments:
   # The active options are as follows:
   utterances:
     repo: eason-zhan/eason-zhan.github.io # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    issue_term: title # < url | pathname | title | ...>
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
