@@ -367,18 +367,18 @@ let series = [
             479.7969589506907
         ]
     }
-]
+];
 
-let series_copy = JSON.parse(JSON.stringify(series))
+let series_copy = JSON.parse(JSON.stringify(series));
 
 let part1_series = series_copy.map(e => {
-		e.data.splice(15)
-		return e
+		e.data.splice(15);
+		return e;
 	});
 
 let part2_series = series.map(e => {
-	e.data.splice(0, e.data.length - 15)
-	return e
+	e.data.splice(0, e.data.length - 15);
+	return e;
 });
 
 Highcharts.chart('binary_search_benchmark_1', {
@@ -485,5 +485,4 @@ Highcharts.chart('binary_search_benchmark_2', {
         }]
     }
 });
-
 </script>
