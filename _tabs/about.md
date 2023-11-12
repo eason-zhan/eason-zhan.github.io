@@ -4,10 +4,10 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> Remember me! 
 {: .prompt-tip }
 
 Je m'appelle Eason. J'étudie le français maintenant.
 
-Now I am a C++ developer at Bilibili. Before this I worked at Tencent.
+I am currently employed at Bilibili as a C++ developer, sepcializing in low-latency server. Prior to this role, I worked at Tencent as a full stack developer.
 
