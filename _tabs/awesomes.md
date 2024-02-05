@@ -20,8 +20,7 @@ order: 4
 2. [Eli Bendersky's website](https://eli.thegreenplace.net/)
 3. [Erik Rigtorp](https://rigtorp.se/)
 4. [Game Programming Patterns](https://gameprogrammingpatterns.com/)
-5. [IT Hare](http://ithare.com/)
-6. [Jeff Preshing on Programming](https://preshing.com/)
+5. [Jeff Preshing on Programming](https://preshing.com/)
 
 ### Podcasts
 
