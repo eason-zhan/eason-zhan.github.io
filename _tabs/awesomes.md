@@ -13,6 +13,7 @@ order: 4
 5. [Eytzinger Binary Search](https://algorithmica.org/en/eytzinger)
 6. [Implicit Static B-trees](https://algorithmica.org/en/b-tree)
 7. [Beej's Guide to Network Programming Using Internet Sockets](https://beej.us/guide/bgnet/)
+8. [kylin](https://taoste.github.io/dirtysalt/html/kylin.html#orgheadline81)
 
 ### Blogs
 
