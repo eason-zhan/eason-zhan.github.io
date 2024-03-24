@@ -16,7 +16,7 @@ When using `protoc` (the protocol buffer compiler) to compile a protobuf message
 
 ### Optimizing in the wrong way.
 
-An online advertising system had a `Stats` message with a timestamp and some statistics data fields: 
+For example, an online advertising system had a `Stats` message with a timestamp and some statistics data fields: 
 
 ```protobuf
 message Stats {
@@ -35,7 +35,7 @@ message Stats {
     repeated int64 acc_bucket  = 13;
 }
 ```
-One day, I need to optimize this message and delete its hour statistics data `hour_*` fields. I did expect that these deletions would be a memory and CPU save operation. However, the server has a CPU hotspot for accessing the stats message.
+One day, It needs to modifiy this message and delete its hour statistics data `hour_*` fields. I did expect that these deletions would be a memory and CPU save operation. However, the server had a CPU hotspot for accessing the stats message.
 
 ```protobuf
 // After remove the `hour_*` fields
@@ -83,4 +83,4 @@ As the ad server always accesses the stats `ts` and `cost` fields sequentially, 
 
 ### Summary
 
-Using protocol buffer as a server communication protocol is a good idea, it is competent at serialization, deserialization, and initialization, but its layout is not optimal when using its generated objects in a high-performance server, it deserves some acumen to design your messages to avoid spatial locality break.
+Using protocol buffer as a server communication protocol is a good idea, it is competent at serialization, deserialization, and initialization, but **its layout is not optimal** when using its generated objects in a high-performance server, it deserves some acumen to design your messages to avoid spatial locality break.
