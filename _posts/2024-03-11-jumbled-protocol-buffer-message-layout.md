@@ -59,7 +59,7 @@ The object layout of message `Stats`:
 +------ 16 BYTE ------+- 8 BYTE -+------ 16 BYTE ------+- 8 BYTE -+------ 16 BYTE ------+
 |    (11)bucket       | (11)size |      (12)hour       | (12)size |  (13)acc_bucket     |
 +- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+
-| (13.a)   |   (1)ts  |  (2)show | (3)click |  (4)cost |    (5)   |    (6)   | (7)      |
+| (13)size |   (1)ts  |  (2)show | (3)click |  (4)cost |    (5)   |    (6)   | (7)      |
 +- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+
 |    (8)   |    (9)   |   (10)   |     *    |     *    |     *    |     *    |     *    |
 +- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+
@@ -69,13 +69,13 @@ And, the object layout of message `StatsOpt`:
 
 ```
 +------ 16 BYTE ------+- 8 BYTE -+------ 16 BYTE ------+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+
-|    (8)bucket        | (8)size  |      (9)hour        | (9)size  | (13.a)   |   (1)ts  |
+|    (8)bucket        | (8)size  |      (9)acc_bucket  | (9)size  |  (1)ts   | (2)show  |
 +- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+
-|  (2)show | (3)click |  (4)cost |    (5)   |    (6)   | (7)      |     *    |     *    |
+| (3)click |  (3)cost |  (4)cost |    (5)   |    (6)   | (7)      |     *    |     *    |
 +- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+- 8 BYTE -+
 ```
 
-`protoc` using two class members of a total of 24 Bytes to represent a repeated field, 16 Bytes for the `RepeatedField<T> f_` part, and 8 Bytes for the `atomic<int> _size` part.
+`protoc` using two class members of a total of *24 Bytes* to represent a repeated field, a member of 16 Bytes for the `RepeatedField<T> f_` part, and a member 8 Bytes for the `atomic<int> _size` part.
 
 <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Feason-zhan%2Fdsy%2Fblob%2Fmain%2Fdemos%2F03_protobuf_layout%2Fproto%2Fstats.pb.h%23L635-L649&style=github&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
 
