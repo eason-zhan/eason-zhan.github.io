@@ -25,6 +25,7 @@ order: 4
 
 ### Podcasts
 
-1. [TLB Hit](https://tlbh.it/index.html)
-2. [ADSP, Alogrithm + Data Structure = Program](https://adspthepodcast.com/episodes/)
+1. [Two's Complement](https://www.twoscomplement.org/#podcast)
+2. [TLB Hit](https://tlbh.it/index.html)
 3. [CoRecursive](https://corecursive.com/)
+4. [ADSP, Alogrithm + Data Structure = Program](https://adspthepodcast.com/episodes/)
