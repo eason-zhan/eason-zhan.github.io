@@ -39,7 +39,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/eason-zhan 
+    - https://github.com/eason-zhan
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -80,7 +80,7 @@ avatar: /assets/img/avatar.png
 toc: true
 
 comments:
-  active: utterances 
+  active: utterances
   # The active options are as follows:
   utterances:
     repo: eason-zhan/eason-zhan.github.io # <gh-username>/<repo>
@@ -171,6 +171,7 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
+  - vendor
 
 jekyll-archives:
   enabled: [categories, tags]
